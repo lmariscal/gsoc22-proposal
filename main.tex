@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[british]{babel}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+
+%% Sets page size and margins
+\usepackage[a4paper, margin=1in]{geometry}
+
+%% Useful packages
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage[
+backend=biber,
+style=apa,
+sorting=ynt
+]{biblatex}
+\addbibresource{biblio.bib}
+
+\title{%
+\Large Google Summer of Code 2022 \\
+\LARGE Differentiable Rendering}
+
+\author{%
+\large Contributor: Leonardo D. Mariscal \\
+\large Mentors: Dhairya Gandhi, Julian Samaroo \\
+\large Project Length: 350hr}
+
+\date{}
+
+\tikzset{
+every node/.style={draw,text width=3cm,drop shadow},
+style1/.style= {rectangle, rounded corners=3pt, thin,align=center,fill=white!60},
+style2/.style= {rectangle, rounded corners=3pt, thin,align=center,fill=white!60},
+style3/.style= {rectangle,thin,align=left,fill=white!60}
+}
+
+\begin{document}
+\maketitle
+
+\input{paper}
+
+\end{document}
